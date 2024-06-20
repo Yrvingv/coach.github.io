@@ -69,7 +69,27 @@
             max-width: 80%;
             height: auto;
         }
-
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-button img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+        .whatsapp-button:hover {
+            background-color: #20b957;
+        }
         @media (min-width: 768px) {
             .button {
                 padding: 20px 60px;
@@ -92,7 +112,6 @@
                 font-size: 40px;
             }
         }
-
         @media (min-width: 1200px) {
             .button {
                 padding: 60px 120px;
@@ -114,21 +133,27 @@
             h1, p {
                 font-size: 60px;
             }
+        }
+        /* Estilos responsivos */
+        @media (max-width: 600px) {
+        .whatsapp-button {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+        .whatsapp-button img {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+        }
+        @media (max-width: 400px) {
             .whatsapp-button {
-                display: inline-flex;
-                align-items: center;
-                background-color: #25D366;
-                color: white;
-                padding: 10px 20px;
-                border-radius: 5px;
-                text-decoration: none;
-                font-size: 16px;
-                font-weight: bold;
+                flex-direction: column;
+                padding: 10px;
             }
             .whatsapp-button img {
-                margin-right: 10px;
-                width: 24px;
-                height: 24px;
+                margin-right: 0;
+                margin-bottom: 5px;
             }
         }
     </style>
@@ -157,11 +182,11 @@
                 <input type="submit" value="Enviar">
             </form>
         </div>
-        <p>HAZ UNA CITA CONMIGO 1:1(5min)</p>
+        <p>PROGRAMA UNA CITA CONMIGO 1:1</p>
         <a href='https://calendar.google.com/calendar/appointments/schedules/AcZssZ2sk3NFyxU_bm5QwFzEXLEhaZ-QyLJdYGxEqaSQCEOvBejRuBwE6fmxcujID7n5PVKVCpA7EQs7?gv=true" style="border: 0" width="100%" height="600" frameborder="0"' class="button">Reservar Cita</a>
         <a href="https://wa.me/+5491128390182" class="whatsapp-button" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
-            1:1
+            1 a 1 por WhatsApp
         </a>
     </div>
 </body>
